@@ -1,8 +1,6 @@
-
-<!-- saved from url=(0433)https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/411511435634782.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2TAWW44RCEE6YREN%2F20210526%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210526T122706Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27D8.html&X-Amz-Signature=1791248423eca9b12c3370627555b661b0a86bf69f7b5dab986404c75f71775a -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-   
-
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <style>
       .myHeading {
         color: red;
@@ -12,6 +10,7 @@
   <body>
     <div>
       <button id="ex1">Ex1</button>
+      <button id="ex3">Ex3</button>
     </div>
     
     <header>
@@ -60,7 +59,7 @@
 
       const btn1= document.querySelector("#ex1")
       btn1.addEventListener('click', function(){
-        changeTitle("Murilo Alves");
+        changeTitle("The New Title");
            })
      
       /* EXERCISE 2
@@ -75,9 +74,15 @@
       Write a function for changing the text of only the p which are children of a div.
       */
 
-      const changePcontent = function () {
-        //
+      const changePcontent = function (newP) {
+        let changeP = document.getElementsByTagName("p")[0];
+        changeP.innerText = newP
       };
+
+      const btn3= document.querySelector("#ex3")
+      btn3.addEventListener('click', function(){
+        changePcontent("The New P");
+           })
 
       /* EXERCISE 4
       Write a function for changing the destination of every link to https://www.google.com
