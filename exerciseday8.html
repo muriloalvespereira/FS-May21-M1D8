@@ -16,6 +16,7 @@
       <button id="ex5">Ex5</button>
       <button id="ex6">Ex6</button>
       <button id="ex7">Ex7</button>
+      <button id="ex8">Ex8</button>
     </div>
     
     <header>
@@ -153,9 +154,16 @@
       Write a function for making the background of every UL green.
       */
 
-      const paintItGreen = function () {
-        //
+      const paintItGreen = function (){
+      changeGreen = document.querySelectorAll("ul")
+      for (let makeGreen of changeGreen)
+      makeGreen.style.background = "green"
       };
+
+      const btn8 = document.querySelector("#ex8")
+      btn8.addEventListener("click", function(){
+        paintItGreen()
+      })
 
       /* EXERCISE 9
       Make the heading of the page change color every time the user clicks on it.
