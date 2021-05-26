@@ -14,6 +14,7 @@
       <button id="ex3">Ex3</button>
       <button id="ex4">Ex4</button>
       <button id="ex5">Ex5</button>
+      <button id="ex6">Ex6</button>
     </div>
     
     <header>
@@ -121,10 +122,17 @@
       /* EXERCISE 6
       Write a function for adding a second paragraph to the div.
       */
-
       const addParagraph = function (content) {
-        //
+        let createNewP = document.createElement("p")
+        createNewP.innerText = content;
+        let addItem = document.querySelector("div p")
+        addItem.appendChild(createNewP)
       };
+
+      const btn6= document.querySelector("#ex6")
+      btn6.addEventListener('click', function(){
+        addParagraph("Second Paragraph");
+           })
 
       /* EXERCISE 7
       Write a function for making the first UL disappear.
