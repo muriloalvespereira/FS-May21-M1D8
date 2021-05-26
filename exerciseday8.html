@@ -17,6 +17,7 @@
       <button id="ex6">Ex6</button>
       <button id="ex7">Ex7</button>
       <button id="ex8">Ex8</button>
+      <button id="ex9">Ex9</button>
     </div>
     
     <header>
@@ -170,9 +171,22 @@
       */
 
       const makeItClickable = function () {
-        //
+      changeBG = document.querySelector("header")
+      changeBG.style.background = getRandomColor()
       };
 
+      const btn9 = document.querySelector("#ex9")
+      btn9.addEventListener("click", function(){
+        makeItClickable()
+      })
+
+      function getRandomColor() {
+      const red = Math.round(Math.random() * 255);
+      const green = Math.round(Math.random() * 255);
+      const blue = Math.round(Math.random() * 255);
+
+      return "rgb(" + red + ", " + green + ", " + blue + ")";
+    }
       /* EXERCISE 10
       Change the footer text with something else when the user clicks on it.
       */
