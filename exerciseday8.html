@@ -13,6 +13,7 @@
       <button id="ex2">Ex2</button>
       <button id="ex3">Ex3</button>
       <button id="ex4">Ex4</button>
+      <button id="ex5">Ex5</button>
     </div>
     
     <header>
@@ -95,12 +96,6 @@
       /* EXERCISE 4
       Write a function for changing the destination of every link to https://www.google.com
       */
-
-      // const changeUrls = function () {
-      //   let changeA = document.querySelectorAll("a");
-      //   for (let link of changeA)
-      //   link.setAttribute("href", "http://www.google.com.");
-      // };
       const btn4= document.querySelector("#ex4")
       btn4.addEventListener('click', function(){
         let changeA = document.querySelectorAll("a");
@@ -113,9 +108,16 @@
        */
 
       const addToTheSecond = function (content) {
-        //
+        let createNewLi = document.createElement("li")
+        createNewLi.innerText = content;
+        let addItem = document.getElementById("secondList");
+        addItem.appendChild(createNewLi)
       };
 
+      const btn5= document.querySelector("#ex5")
+      btn5.addEventListener('click', function(){
+        addToTheSecond("4rd");
+           })
       /* EXERCISE 6
       Write a function for adding a second paragraph to the div.
       */
