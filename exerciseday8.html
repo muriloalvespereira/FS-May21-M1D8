@@ -19,6 +19,7 @@
       <button id="ex8">Ex8</button>
       <button id="ex9">Ex9</button>
       <button id="ex10">Ex10</button>
+      <button id="ex11">Ex11</button>
     </div>
     
     <header>
@@ -206,9 +207,16 @@
       /* EXERCISE 11
       Attach an event listener to the input field in the page for console logging its value just after any keystroke.
       */
-
+      const attachListener = function (){
       const inputField = document.getElementById("input-field");
-      // ...
+      inputField.setAttribute("value", "Exercise 11")
+      }
+
+      const btn11 = document.getElementById("input-field")
+      btn11.addEventListener('keypress', function(){
+        attachListener()
+      })     
+      
 
       /* EXERCISE 12
       Create a new welcome alert message when the page successfully loads.
