@@ -18,6 +18,7 @@
       <button id="ex7">Ex7</button>
       <button id="ex8">Ex8</button>
       <button id="ex9">Ex9</button>
+      <button id="ex10">Ex10</button>
     </div>
     
     <header>
@@ -192,8 +193,15 @@
       */
 
       const changeFooterText = function () {
-        //
+      changeFooter = document.querySelector("footer p")
+      changeFooter.innerText = "New Footer Text Exercise 10";
       };
+
+      const btn10 = document.querySelector("#ex10")
+      btn10.addEventListener("click", function(){
+        changeFooterText()
+      })
+
 
       /* EXERCISE 11
       Attach an event listener to the input field in the page for console logging its value just after any keystroke.
