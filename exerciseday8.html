@@ -15,6 +15,7 @@
       <button id="ex4">Ex4</button>
       <button id="ex5">Ex5</button>
       <button id="ex6">Ex6</button>
+      <button id="ex7">Ex7</button>
     </div>
     
     <header>
@@ -139,8 +140,14 @@
       */
 
       const firstUlDisappear = function () {
-        //
+      let removeUl = document.getElementById("firstList")
+      removeUl.remove()
       };
+
+      const btn7 = document.querySelector("#ex7")
+      btn7.addEventListener("click", function(){
+        firstUlDisappear()
+      })
 
       /* EXERCISE 8
       Write a function for making the background of every UL green.
