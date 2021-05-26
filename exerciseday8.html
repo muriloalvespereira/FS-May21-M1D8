@@ -12,6 +12,7 @@
       <button id="ex1">Ex1</button>
       <button id="ex2">Ex2</button>
       <button id="ex3">Ex3</button>
+      <button id="ex4">Ex4</button>
     </div>
     
     <header>
@@ -95,9 +96,17 @@
       Write a function for changing the destination of every link to https://www.google.com
       */
 
-      const changeUrls = function () {
-        //
-      };
+      // const changeUrls = function () {
+      //   let changeA = document.querySelectorAll("a");
+      //   for (let link of changeA)
+      //   link.setAttribute("href", "http://www.google.com.");
+      // };
+      const btn4= document.querySelector("#ex4")
+      btn4.addEventListener('click', function(){
+        let changeA = document.querySelectorAll("a");
+        for (let link of changeA)
+        link.setAttribute("href", "http://www.skyscanner.com");
+           })
 
       /* EXERCISE 5
        Write a function for adding a new item in the second list.
